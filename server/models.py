@@ -25,10 +25,11 @@ class Department( db.Model):
 
     id = db.Column ( db.Integer, primary_key = True )
     name = db.Column ( db.String, nullable = False )
-    address = db.Column ( db.String)
+    location = db.Column ( db.String)
 
     def __repr__( self ) :
-        return f"<Department {self.id}, {self.name}, {self.address}>"
+        return f"<Department {self.id}, {self.name}, {self.location}>"
 
-# CD SERVER FIRST
+
 # BEGIN AT FLASK SHELL
+# POSSIBLY RESUBMIT ON COMPLETION
